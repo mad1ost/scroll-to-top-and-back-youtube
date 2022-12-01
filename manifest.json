@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Scroll to top and back - YouTube",
+	"description": "Add support for YouTube pages for Scroll to top and back",
+	"version": "0.0.1",
+	"homepage_url": "https://github.com/mad1ost/scroll-to-top-and-back-youtube",
+	"content_scripts": [
+		{
+			"js": ["youtube.js"],
+			"matches": ["https://www.youtube.com/*"],
+			"run_at": "document_end"
+		}
+	]
+}
